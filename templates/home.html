@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if not 'logged_in' in session %}
+<div class="mt-4 inner cover">
+  <h1 class="mt-4 cover-heading">Welcome to Test API</h1>
+  <p class="lead">
+    This is a one-page template to Test Registration and Login with MySQL DB. Download, edit the code, and add your own features to make it your own.
+  </p>
+  <p class="lead">
+    <a href="http://github.com/zuhairabs/flask_login" class="btn btn-lg btn-default">Learn more</a>
+  </p>
+</div>
+{% else %}
+<div class="mt-4 inner cover">
+  <h1 class="mt-4 cover-heading">Welcome {{ session['name'] }}</h1>
+  <p class="lead">
+    You've successfully Logged In
+  </p>
+  <p class="lead">
+    Id: {{ session['id'] }}
+  </p>
+  <p class="lead">
+    Name: {{ session['name'] }}
+  </p>
+  <p>
+    Username: {{ session['username'] }}
+  </p>
+  <p>
+    Email: {{ session['email'] }}
+  </p>
+  <p class="lead">
+    <a href="/logout" class="mt-2 btn btn-lg btn-default">Logout</a>
+  </p>
+</div>
+{% endif %}
+
+{% endblock %}
