@@ -30,11 +30,9 @@ Project Structure
       └── home.html
   ```
 
-### Screenshots
+### Preview Video
 
-![Pages](https://github.com/realpython/flask-boilerplate/blob/master/screenshots/pages.png)
-
-![Forms](https://github.com/realpython/flask-boilerplate/blob/master/screenshots/forms.png)
+[![Preview Video](/preview.jpg)](https://youtu.be/nZIBfzuOD7s)
 
 
 ### Quick Start
